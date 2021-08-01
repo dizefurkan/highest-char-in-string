@@ -25,8 +25,8 @@ function largestLetter(string) {
     .filter((item) => item.letter === item.letter.toLocaleUpperCase())
     .reduce((largestLetter, letter, index) => {
       if (index === 0) largestLetter = letter;
-
       if (letter.charCode > largestLetter.charCode) largestLetter = letter;
+
       return largestLetter;
     }, undefined);
 
